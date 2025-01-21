@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import router from "./routes";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const MONGO_URL = "mongodb+srv://user123:qwerty123@diplomacluster.ykf5bfo.mongodb.net/?retryWrites=true&w=majority&appName=DiplomaCluster'";
